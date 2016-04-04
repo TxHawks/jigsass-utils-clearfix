@@ -1,0 +1,39 @@
+// *************************************
+//
+// # jigsass-utils-clearfix style guide generator
+// -> It is a best practice for JigSass modules to
+//    not automatically generate css and documentation
+//    on `@import`. Please use this file to enable css
+//    (and comments) generation.
+//
+//    Files in `sgSrc/assets` will be available
+//    for use in the style guide
+//
+// *************************************
+
+@charset 'UTF-8';
+
+@import 'node_modules/jigsass-tools-maps/scss/index';
+@import 'node_modules/jigsass-tools-mq/scss/index';
+@import 'node_modules/jigsass-tools-strings/scss/index';
+@import 'node_modules/jigsass-tools-typography/scss/index';
+@import 'node_modules/jigsass-tools-bidi/scss/index';
+@import 'node_modules/jigsass-tools-selectors/scss/index';
+
+@include jigsass-util(u-cf);
+
+@import 'index.scss';
+
+
+
+
+.fpo {
+  background-color: #0892c1;
+  color: #fff;
+  float: left;
+  font-family: sans-serif;
+  font-weight: 700;
+  line-height: 100px;
+  padding: 0 12px;
+  text-align: center;
+}
