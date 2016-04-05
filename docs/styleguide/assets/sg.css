@@ -1,4 +1,5 @@
-/* ---
+.u-cf {
+  /* ---
 section: u-cf (clearfix)
 ---
 Force an element to clear its floated child element and
@@ -76,6 +77,8 @@ at the location in the cascade where the Jigsass Clearfix partial was imported i
 </div>
 ```
 */
+}
+
 .u-cf:after {
   clear: both;
   content: '';
