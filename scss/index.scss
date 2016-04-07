@@ -66,7 +66,7 @@ other utilities (utilities should always be the last to be imported).
 @import 'path/to/jigsass-utils-clearfix/scss/index';
 ```
 
-Importing the file will create any styles by itself. You would need to indicate that the
+Importing the file will not create any styles by itself. You would need to indicate that the
 `.u-cf` class should actually be generated in each component or object it is used in:
 
 ```scss
@@ -81,7 +81,7 @@ Importing the file will create any styles by itself. You would need to indicate 
 ```scss
 // _c.bar.scss
 .bar {
-  @include jigsass-util(u-clearfix);
+  @include jigsass-util(u-cf);
 
   ...
 }
@@ -90,7 +90,7 @@ Importing the file will create any styles by itself. You would need to indicate 
 ```scss
 // _c.baz.scss
 .baz {
-  @include jigsass-util(u-clearfix);
+  @include jigsass-util(u-cf);
 
   ...
 }

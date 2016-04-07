@@ -48,7 +48,7 @@ prevent its layout from collapsing.</p>
 other utilities (utilities should always be the last to be imported).</p>
 <pre><code class="lang-scss">@import &#39;path/to/jigsass-utils-clearfix/scss/index&#39;;
 </code></pre>
-<p>Importing the file will create any styles by itself. You would need to indicate that the
+<p>Importing the file will not create any styles by itself. You would need to indicate that the
 <code>.u-cf</code> class should actually be generated in each component or object it is used in:</p>
 <pre><code class="lang-scss">// _c.foo.scss
 .foo {
@@ -59,14 +59,14 @@ other utilities (utilities should always be the last to be imported).</p>
 </code></pre>
 <pre><code class="lang-scss">// _c.bar.scss
 .bar {
-  @include jigsass-util(u-clearfix);
+  @include jigsass-util(u-cf);
 
   ...
 }
 </code></pre>
 <pre><code class="lang-scss">// _c.baz.scss
 .baz {
-  @include jigsass-util(u-clearfix);
+  @include jigsass-util(u-cf);
 
   ...
 }
@@ -98,7 +98,7 @@ at the location in the cascade where the Jigsass Clearfix partial was imported i
 			</div>
 		</section>
 		
-	<footer>Last modified Tuesday, 5 April 2016 14:18</footer>
+	<footer>Last modified Thursday, 7 April 2016 15:08</footer>
 </main>
 <script src="prism.js"></script>
 <script src="examples.js"></script>
