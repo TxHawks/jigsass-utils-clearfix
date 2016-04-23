@@ -21,31 +21,13 @@
 
 
 // -------------------------------------
-// Variables
+// Introduction
 // -------------------------------------
 
-$_doclet-store: () !default;
-
-
-
-
-
-// -------------------------------------
-// Definitions
-// -------------------------------------
-
-@include jigsass-define-util(u-cf) {
-  &:after {
-    clear: both;
-    content: '';
-    display: block;
-  }
-
-  $_doclet: $jigsass-util-name;
-  @if (not index($_doclet-store, $_doclet)) {
-     // stylelint-disable
 /* ---
-section: u-cf (clearfix)
+section: Clearfix Util
+title: Introduction
+order: -10
 ---
 Force an element to clear its floated child element and
 prevent its layout from collapsing.
@@ -106,7 +88,41 @@ glance.
 
 As far as bloat goes, just don't worry about it - the actual styles will only be generated once,
 at the location in the cascade where the Jigsass Clearfix partial was imported into the main file:
+*/
 
+
+
+
+
+// -------------------------------------
+// Variables
+// -------------------------------------
+
+$_doclet-store: () !default;
+
+
+
+
+
+// -------------------------------------
+// Definitions
+// -------------------------------------
+
+@include jigsass-define-util(u-cf) {
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+
+  $_doclet: $jigsass-util-name;
+  @if (not index($_doclet-store, $_doclet)) {
+    // stylelint-disable
+/* ---
+section: Clearfix Util
+title: Clear Fix
+order: 1
+---
 ```scss
 // output.css
 .u-cf:after {
