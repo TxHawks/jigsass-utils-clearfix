@@ -14,10 +14,20 @@
 	<ul>
 		
 				<li>
-					<a href="#u-cf-clearfix"><span>u-cf (clearfix)</span></a>
+					<a href="#clearfix-util"><span>Clearfix Util</span></a>
 					
 	<ul>
 		
+				<li>
+					<a href="#introduction"><span>Introduction</span></a>
+					
+				</li>
+				
+				<li>
+					<a href="#clear-fix"><span>Clear Fix</span></a>
+					
+				</li>
+				
 	</ul>
 	
 				</li>
@@ -29,13 +39,13 @@
 
 <main>
 	
-		<section id="u-cf-clearfix">
-			<h2>u-cf (clearfix)</h2>
+		<section id="clearfix-util">
+			<h2>Clearfix Util</h2>
 			<div>
 				
 				
-		<section>
-			
+		<section id="introduction">
+			<h3>Introduction</h3>
 			<div>
 				<p>Force an element to clear its floated child element and
 prevent its layout from collapsing.</p>
@@ -79,7 +89,15 @@ as anyone going through a partial, can easily understand how it should be marked
 glance.</p>
 <p>As far as bloat goes, just don&#39;t worry about it - the actual styles will only be generated once,
 at the location in the cascade where the Jigsass Clearfix partial was imported into the main file:</p>
-<pre><code class="lang-scss">// output.css
+
+				
+			</div>
+		</section>
+		
+		<section id="clear-fix">
+			<h3>Clear Fix</h3>
+			<div>
+				<pre><code class="lang-scss">// output.css
 .u-cf:after {
   clear: both;
   content: &#39;&#39;;
@@ -98,7 +116,7 @@ at the location in the cascade where the Jigsass Clearfix partial was imported i
 			</div>
 		</section>
 		
-	<footer>Last modified Friday, 22 April 2016 22:49</footer>
+	<footer>Last modified Saturday, 23 April 2016 19:12</footer>
 </main>
 <script src="prism.js"></script>
 <script src="examples.js"></script>
